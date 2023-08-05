@@ -1,7 +1,21 @@
+@font-face {
+    font-family: "Noto";
+    src: url("https://db.onlinewebfonts.com/t/2b9a54453c1a3cbc651c0788ade94e4a.eot");
+    src: url("https://db.onlinewebfonts.com/t/2b9a54453c1a3cbc651c0788ade94e4a.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/2b9a54453c1a3cbc651c0788ade94e4a.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/2b9a54453c1a3cbc651c0788ade94e4a.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/2b9a54453c1a3cbc651c0788ade94e4a.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/2b9a54453c1a3cbc651c0788ade94e4a.svg#Noto IKEA Latin Regular")format("svg");
+}
+
 html, body {
     margin: 0;
     padding: 0;
     border-width: 0;
+
+    height: 97vh;
+
+    font-family: Noto;
 } 
 
 .container {
@@ -14,13 +28,17 @@ html, body {
     flex: auto;
     position: relative;
     width: 40%;
-    height: 100vh;
+    height: 100%;
     background: black;
+    align-items: center;
+
+    overflow: hidden;
 }
 
 .bg-img {
     width: auto;
-    height: 100vh;
+    height: 1000px;
+    object-fit: cover;
     z-index: -1; 
 }
 
@@ -29,8 +47,8 @@ html, body {
     width: 75%;
     background: black;
     opacity: 0.98;
-    top: 23rem;
     margin-left: 12.5%;
+    top: 40%;
 }
 
 .logo-img {
@@ -41,9 +59,72 @@ html, body {
 
 .right {
     flex: auto;
+    flex-direction: column;
     position: relative;
     width: 60%;
+    height: 100%;
     background: rgb(243, 241, 237);
 }
 
+.login-container {
+    position: relative;
 
+    display: flex;
+    flex-direction: column;
+
+    margin: 20%;
+    margin-top: 35vh;
+}
+
+.login-container > label {
+    font-size: x-large;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.remember-me {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.remember-me > input {
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+    margin-bottom: -3px;
+}
+
+.login-container > div > label {
+    font-size: large;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login-container > input {
+    height: 30px;
+    border: 2px solid rgb(142, 142, 142);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.login-container > button {
+    width: 30%;
+    height: 30px;
+    border: 2px solid rgb(142, 142, 142);
+    background-color: white;
+    border-radius: 15px;
+    align-self: center;
+}
+
+footer {
+    height: 100vh;
+    text-align: center;
+    color: rgb(231, 231, 231);
+    background-color: rgb(62, 62, 62);
+}
+
+/* TODO: Add button effect & add sign up page
