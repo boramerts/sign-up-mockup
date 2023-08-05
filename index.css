@@ -1,0 +1,49 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+} 
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.left {
+    flex: auto;
+    position: relative;
+    width: 40%;
+    height: 100vh;
+    background: black;
+}
+
+.bg-img {
+    width: auto;
+    height: 100vh;
+    z-index: -1; 
+}
+
+.logo-body {
+    position: absolute;
+    width: 75%;
+    background: black;
+    opacity: 0.98;
+    top: 23rem;
+    margin-left: 12.5%;
+}
+
+.logo-img {
+    position: absolute;
+    width: 100%;
+}
+
+
+.right {
+    flex: auto;
+    position: relative;
+    width: 60%;
+    background: rgb(243, 241, 237);
+}
+
+
